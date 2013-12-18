@@ -40,7 +40,7 @@ CREATE TABLE fornecedor (
 );
 
 CREATE TABLE funcionario (
-  cod_funcionario VARCHAR NOT NULL AUTO_INCREMENT,
+  cod_funcionario INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   filial_cod_filial INTEGER UNSIGNED NOT NULL,
   nome VARCHAR(100) NULL,
   cpf VARCHAR(14) NULL,
@@ -102,7 +102,7 @@ CREATE TABLE servico (
 CREATE TABLE venda (
   cod_venda INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   filial_cod_filial INTEGER UNSIGNED NOT NULL,
-  funcionario_cod_funcionario VARCHAR NOT NULL,
+  funcionario_cod_funcionario INTEGER UNSIGNED NOT NULL,
   cliente_cod_cliente INTEGER UNSIGNED NOT NULL,
   data_2 DATE NULL,
   valor_total FLOAT(8) NULL,
