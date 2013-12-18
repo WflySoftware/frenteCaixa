@@ -50,7 +50,7 @@ return array(
 		),
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=localhost;dbname=frente_caixa',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
