@@ -30,7 +30,6 @@
 			
 			echo $form->dropDownList($model, 'filial_cod_filial',$auxArrayFiliais
    				); 
-			print_r($auxArrayFiliais);
 			
 		?>
 	</div>
