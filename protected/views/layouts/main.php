@@ -26,16 +26,27 @@
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
 
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
+	<div id="mainMbMenu">
+	 <?php $this->widget('application.extensions.mbmenu.MbMenu',array( 
+            'items'=>array( 
+                array('label'=>'Início', 'url'=>array('/site/index')), 
+                array('label'=>'Sobre', 'url'=>array('/site/page', 'view'=>'about')),
+                array('label'=>'Contato', 'url'=>array('/site/contact')),
+                array('label'=>'Cadastros', 'url'=>array('/site/contact'), 
+                  'items'=>array( 
+                    array('label'=>'Cliente','url'=>array('/cliente')),
+                    array('label'=>'Filial','url'=>array('/filial')),
+                    array('label'=>'Fornecedor','url'=>array('/fornecedor')), 
+                    array('label'=>'Funcionário','url'=>array('/funcionario')),
+                    array('label'=>'Produto','url'=>array('/produto')),
+                    array('label'=>'Venda','url'=>array('/venda')),     
+                	), 
+                ),
+                array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest) 
+            ), 
+    )); ?> 
+		
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
