@@ -60,14 +60,14 @@ class Cliente extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cod_cliente' => 'Cod Cliente',
-			'filial_cod_filial' => 'Filial Cod Filial',
+			'cod_cliente' => 'ID',
+			'filial_cod_filial' => 'Filial',
 			'nome' => 'Nome',
-			'cpf' => 'Cpf',
-			'endereco' => 'Endereco',
+			'cpf' => 'CPF',
+			'endereco' => 'Endereço',
 			'telefone' => 'Telefone',
 			'email' => 'Email',
-			'data_nascimento' => 'Data Nascimento',
+			'data_nascimento' => 'Data de Nascimento',
 		);
 	}
 
