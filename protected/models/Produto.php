@@ -62,15 +62,15 @@ class Produto extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cod_produto' => 'Cod Produto',
-			'filial_cod_filial' => 'Filial Cod Filial',
-			'descricao' => 'Descricao',
-			'valor_compra' => 'Valor Compra',
-			'valor_venda' => 'Valor Venda',
-			'cod_barras' => 'Cod Barras',
+			'cod_produto' => 'ID',
+			'filial_cod_filial' => 'Filial',
+			'descricao' => 'Descrição',
+			'valor_compra' => 'Valor de Compra',
+			'valor_venda' => 'Valor de Venda',
+			'cod_barras' => 'Cod. de Barras',
 			'quantidade' => 'Quantidade',
-			'data_aquisicao' => 'Data Aquisicao',
-			'data_validade' => 'Data Validade',
+			'data_aquisicao' => 'Data de Aquisição',
+			'data_validade' => 'Data de Validade',
 		);
 	}
 
