@@ -58,13 +58,13 @@ class Venda extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cod_venda' => 'Cod Venda',
-			'filial_cod_filial' => 'Filial Cod Filial',
-			'funcionario_cod_funcionario' => 'Funcionario Cod Funcionario',
-			'cliente_cod_cliente' => 'Cliente Cod Cliente',
-			'data_2' => 'Data 2',
+			'cod_venda' => 'ID',
+			'filial_cod_filial' => 'Filial',
+			'funcionario_cod_funcionario' => 'Funcionario',
+			'cliente_cod_cliente' => 'Cliente',
+			'data_2' => 'Data',
 			'valor_total' => 'Valor Total',
-			'forma_pagamento' => 'Forma Pagamento',
+			'forma_pagamento' => 'Forma de Pagamento',
 		);
 	}
 
