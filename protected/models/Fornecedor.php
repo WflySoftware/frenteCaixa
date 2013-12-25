@@ -66,20 +66,20 @@ class Fornecedor extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cod_fornecedor' => 'Cod Fornecedor',
-			'filial_cod_filial' => 'Filial Cod Filial',
+			'cod_fornecedor' => 'ID',
+			'filial_cod_filial' => 'Filial',
 			'nome_fantasia' => 'Nome Fantasia',
-			'cnpj' => 'Cnpj',
-			'razao_social' => 'Razao Social',
-			'inscricao_estadual' => 'Inscricao Estadual',
+			'cnpj' => 'CNPJ',
+			'razao_social' => 'Razão Social',
+			'inscricao_estadual' => 'Inscrição Estadual',
 			'estado' => 'Estado',
 			'email' => 'Email',
-			'endereco' => 'Endereco',
-			'telefone_com' => 'Telefone Com',
-			'telefone_cel' => 'Telefone Cel',
+			'endereco' => 'Endereço',
+			'telefone_com' => 'Tel. Comercial',
+			'telefone_cel' => 'Tel. Celular',
 			'cidade' => 'Cidade',
 			'representante' => 'Representante',
-			'telefone_rep' => 'Telefone Rep',
+			'telefone_rep' => 'Tel. Representante',
 		);
 	}
 
