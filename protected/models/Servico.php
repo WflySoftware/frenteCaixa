@@ -54,9 +54,9 @@ class Servico extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cod_servico' => 'Cod Servico',
-			'filial_cod_filial' => 'Filial Cod Filial',
-			'descricao' => 'Descricao',
+			'cod_servico' => 'ID',
+			'filial_cod_filial' => 'Filial',
+			'descricao' => 'Descrição',
 			'valor' => 'Valor',
 		);
 	}
