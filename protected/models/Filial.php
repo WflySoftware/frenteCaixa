@@ -54,10 +54,10 @@ class Filial extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cod_filial' => 'Cod Filial',
+			'cod_filial' => 'ID ',
 			'nome' => 'Nome',
-			'endereco' => 'Endereco',
-			'estado_caixa' => 'Estado Caixa',
+			'endereco' => 'Endereço',
+			'estado_caixa' => 'Estado de Caixa',
 			'pontos' => 'Pontos',
 		);
 	}
