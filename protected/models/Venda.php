@@ -60,7 +60,7 @@ class Venda extends CActiveRecord
 		return array(
 			'cod_venda' => 'ID',
 			'filial_cod_filial' => 'Filial',
-			'funcionario_cod_funcionario' => 'Funcionario',
+			'funcionario_cod_funcionario' => 'Funcionário',
 			'cliente_cod_cliente' => 'Cliente',
 			'data_2' => 'Data',
 			'valor_total' => 'Valor Total',
