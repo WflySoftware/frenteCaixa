@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'WFLY Software',
+	'name'=>'PDV - Ponto de Vendas',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
