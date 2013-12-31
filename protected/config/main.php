@@ -83,4 +83,7 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
+
+	'sourceLanguage'=>'pt_br',
+	'language'=>'pt_br'
 );

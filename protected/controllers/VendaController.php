@@ -154,7 +154,7 @@ class VendaController extends Controller
 	{
 		$model=Venda::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+			throw new CHttpException(404,'Página requisitada não encontrada.');
 		return $model;
 	}
 
