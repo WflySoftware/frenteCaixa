@@ -30,9 +30,7 @@
 	 <?php $this->widget('application.extensions.mbmenu.MbMenu',array( 
             'items'=>array( 
                 array('label'=>'Início', 'url'=>array('/site/index')), 
-                array('label'=>'Sobre', 'url'=>array('/site/page', 'view'=>'about')),
-                array('label'=>'Contato', 'url'=>array('/site/contact')),
-                array('label'=>'Cadastros', 'url'=>array('/site/contact'), 
+                array('label'=>'Cadastros', 'url'=>array('/site/contact'), 'visible'=>!Yii::app()->user->isGuest,
                   'items'=>array( 
                     array('label'=>'Cliente','url'=>array('/cliente')),
                     array('label'=>'Filial','url'=>array('/filial')),
