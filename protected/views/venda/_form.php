@@ -75,8 +75,10 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'forma_pagamento'); ?>
-		<?php echo $form->textField($model,'forma_pagamento'); ?>
-		<?php echo $form->error($model,'forma_pagamento'); ?>
+		<?php 
+			echo $form->dropDownList($model, 'forma_pagamento',array("Dinheiro"=>'Dinheiro', "Cheque"=> 'Cheque',"Cartão de Débito"=>'Cartão de Débito',
+			 "Cartão de Crédito À Vista"=>'Cartão de Crédito À Vista', "Cartão de Crédito Parcelado"=>'Cartão de Crédito Parcelado')
+   			); ?>
 	</div>
 
 	<div class="row buttons">
