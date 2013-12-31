@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Venda', 'url'=>array('index')),
-	array('label'=>'Create Venda', 'url'=>array('create')),
-	array('label'=>'Update Venda', 'url'=>array('update', 'id'=>$model->cod_venda)),
-	array('label'=>'Delete Venda', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_venda),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Venda', 'url'=>array('admin')),
+	array('label'=>'Listar Venda', 'url'=>array('index')),
+	array('label'=>'Criar Venda', 'url'=>array('create')),
+	array('label'=>'Atualizar Venda', 'url'=>array('update', 'id'=>$model->cod_venda)),
+	array('label'=>'Deletar Venda', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_venda),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manipular Venda', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Venda #<?php echo $model->cod_venda; ?></h1>
+<h1>Venda ID: <?php echo $model->cod_venda; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

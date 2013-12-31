@@ -57,8 +57,8 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by Wfly Software.<br/>
+		Todos os direitos Reservados.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 

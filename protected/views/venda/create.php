@@ -4,12 +4,12 @@
 
 $this->breadcrumbs=array(
 	'Vendas'=>array('index'),
-	'Create',
+	'Criar',
 );
 
 $this->menu=array(
-	array('label'=>'List Venda', 'url'=>array('index')),
-	array('label'=>'Manage Venda', 'url'=>array('admin')),
+	array('label'=>'Listar Vendas', 'url'=>array('index')),
+	array('label'=>'Manipular Venda', 'url'=>array('admin')),
 );
 ?>
 
