@@ -10,7 +10,7 @@
  * @property string $cliente_cod_cliente
  * @property string $data_2
  * @property double $valor_total
- * @property integer $forma_pagamento
+ * @property string $forma_pagamento
  */
 class Venda extends CActiveRecord
 {
@@ -31,7 +31,7 @@ class Venda extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('filial_cod_filial, funcionario_cod_funcionario, cliente_cod_cliente', 'required'),
-			array('forma_pagamento', 'numerical', 'integerOnly'=>true),
+			array('forma_pagamento', 'length', 'max'=>100),
 			array('valor_total', 'numerical'),
 			array('filial_cod_filial, funcionario_cod_funcionario, cliente_cod_cliente', 'length', 'max'=>10),
 			array('data_2', 'safe'),
@@ -92,7 +92,7 @@ class Venda extends CActiveRecord
 		$criteria->compare('cliente_cod_cliente',$this->cliente_cod_cliente,true);
 		$criteria->compare('data_2',$this->data_2,true);
 		$criteria->compare('valor_total',$this->valor_total);
-		$criteria->compare('forma_pagamento',$this->forma_pagamento);
+		$criteria->compare('forma_pagamento',$this->forma_pagamento,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
