@@ -37,6 +37,7 @@
                     array('label'=>'Fornecedor','url'=>array('/fornecedor')), 
                     array('label'=>'Funcionário','url'=>array('/funcionario')),
                     array('label'=>'Produto','url'=>array('/produto')),
+					array('label'=>'Serviços','url'=>array('/servico')),
                     array('label'=>'Venda','url'=>array('/venda')),     
                 	), 
                 ),

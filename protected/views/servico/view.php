@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Servico #<?php echo $model->cod_servico; ?></h1>
+<h1>Ver Serviço ID: <?php echo $model->cod_servico; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
