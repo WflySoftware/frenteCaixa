@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Funcionario</h1>
+<h1>Cadastrar Funcion&aacute;rio</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

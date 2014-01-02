@@ -3,20 +3,20 @@
 /* @var $model Funcionario */
 
 $this->breadcrumbs=array(
-	'Funcionarios'=>array('index'),
+	'Funcionários'=>array('index'),
 	$model->cod_funcionario,
 );
 
 $this->menu=array(
-	array('label'=>'List Funcionario', 'url'=>array('index')),
-	array('label'=>'Create Funcionario', 'url'=>array('create')),
-	array('label'=>'Update Funcionario', 'url'=>array('update', 'id'=>$model->cod_funcionario)),
-	array('label'=>'Delete Funcionario', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_funcionario),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Funcionario', 'url'=>array('admin')),
+	array('label'=>'Listar Funcionários', 'url'=>array('index')),
+	array('label'=>'Cadastrar Funcionário', 'url'=>array('create')),
+	array('label'=>'Atualizar Funcionário', 'url'=>array('update', 'id'=>$model->cod_funcionario)),
+	array('label'=>'Deletar Funcionário', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_funcionario),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manipular Funcionários', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Funcionario #<?php echo $model->cod_funcionario; ?></h1>
+<h1>Ver Funcionário ID<?php echo $model->cod_funcionario; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
