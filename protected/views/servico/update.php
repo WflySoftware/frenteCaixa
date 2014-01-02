@@ -3,16 +3,16 @@
 /* @var $model Servico */
 
 $this->breadcrumbs=array(
-	'Servicos'=>array('index'),
+	'Serviços'=>array('index'),
 	$model->cod_servico=>array('view','id'=>$model->cod_servico),
-	'Update',
+	'Atualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Servico', 'url'=>array('index')),
-	array('label'=>'Create Servico', 'url'=>array('create')),
-	array('label'=>'View Servico', 'url'=>array('view', 'id'=>$model->cod_servico)),
-	array('label'=>'Manage Servico', 'url'=>array('admin')),
+	array('label'=>'Listar Servicos', 'url'=>array('index')),
+	array('label'=>'Criar Serviço', 'url'=>array('create')),
+	array('label'=>'Ver Serviços', 'url'=>array('view', 'id'=>$model->cod_servico)),
+	array('label'=>'Manipular Serviços', 'url'=>array('admin')),
 );
 ?>
 
