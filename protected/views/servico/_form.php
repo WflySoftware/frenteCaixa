@@ -15,7 +15,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos<span class="required">*</span> obrigat&oacute;rios.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -47,7 +47,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton('Salvar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
