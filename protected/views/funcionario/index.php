@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Funcionarios',
+	'Funcionários',
 );
 
 $this->menu=array(
-	array('label'=>'Create Funcionario', 'url'=>array('create')),
-	array('label'=>'Manage Funcionario', 'url'=>array('admin')),
+	array('label'=>'Cadastrar Funcionário', 'url'=>array('create')),
+	array('label'=>'Manipular Funcionário', 'url'=>array('admin')),
 );
 ?>
 

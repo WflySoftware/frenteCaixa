@@ -3,13 +3,13 @@
 /* @var $model Funcionario */
 
 $this->breadcrumbs=array(
-	'Funcionarios'=>array('index'),
+	'Funcionários'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Funcionario', 'url'=>array('index')),
-	array('label'=>'Manage Funcionario', 'url'=>array('admin')),
+	array('label'=>'Listar Funcionário', 'url'=>array('index')),
+	array('label'=>'Manipular Funcionário', 'url'=>array('admin')),
 );
 ?>
 
