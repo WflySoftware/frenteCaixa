@@ -3,13 +3,13 @@
 /* @var $model Fornecedor */
 
 $this->breadcrumbs=array(
-	'Fornecedors'=>array('index'),
-	'Manage',
+	'Fornecedor'=>array('index'),
+	'Manipular',
 );
 
 $this->menu=array(
-	array('label'=>'List Fornecedor', 'url'=>array('index')),
-	array('label'=>'Create Fornecedor', 'url'=>array('create')),
+	array('label'=>'Listar Fornecedor', 'url'=>array('index')),
+	array('label'=>'Cadastrar Fornecedor', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Fornecedors</h1>
+<h1>Manipular Fornecedores</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
