@@ -3,7 +3,7 @@
 /* @var $model Servico */
 
 $this->breadcrumbs=array(
-	'Servi&ccedil;os'=>array('index'),
+	'Serviços'=>array('index'),
 	'Manipular',
 );
 

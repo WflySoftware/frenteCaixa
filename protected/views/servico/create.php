@@ -3,13 +3,13 @@
 /* @var $model Servico */
 
 $this->breadcrumbs=array(
-	'Servicos'=>array('index'),
-	'Create',
+	'Serviços'=>array('index'),
+	'Criar',
 );
 
 $this->menu=array(
-	array('label'=>'List Servico', 'url'=>array('index')),
-	array('label'=>'Manage Servico', 'url'=>array('admin')),
+	array('label'=>'Listar Serviços', 'url'=>array('index')),
+	array('label'=>'Manipular Serviç', 'url'=>array('admin')),
 );
 ?>
 
