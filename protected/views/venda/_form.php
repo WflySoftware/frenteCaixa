@@ -82,7 +82,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Salvar' : 'Salvar'); ?>
+		<?php echo CHtml::submitButton('Salvar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
