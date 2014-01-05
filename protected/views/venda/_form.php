@@ -63,7 +63,16 @@
 	</div>
 	<div class="row">
 		<?php echo $form->labelEx($model,'data_2'); ?>
-		<?php echo $form->textField($model,'data_2'); ?>
+		<?php                    
+        $this->widget('application.extensions.CJuiDateTimePicker.CJuiDateTimePicker',array(
+                'language'=>'pt',
+                'model'=>$model,                                // Model object
+                'attribute'=>'data_2', // Attribute name
+                'mode'=>'date',                     // Use "time","date" or "datetime" (default)
+                'options'=>array("dateFormat"=>'dd/mm/yy'),                     // jquery plugin options
+                'htmlOptions'=>array('readonly'=>true) // HTML options
+        ));                             
+        ?> 
 		<?php echo $form->error($model,'data_2'); ?>
 	</div>
 
