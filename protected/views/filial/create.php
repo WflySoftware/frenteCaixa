@@ -3,7 +3,7 @@
 /* @var $model Filial */
 
 $this->breadcrumbs=array(
-	'Filials'=>array('index'),
+	'Filiais'=>array('index'),
 	'Cadastrar',
 );
 
