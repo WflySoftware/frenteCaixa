@@ -12,7 +12,7 @@ $this->menu=array(
 	array('label'=>'Listar Filiais', 'url'=>array('index')),
 	array('label'=>'Cadastrar Filial', 'url'=>array('create')),
 	array('label'=>'Ver Filial', 'url'=>array('view', 'id'=>$model->cod_filial)),
-	array('label'=>'Manipularfa Filial', 'url'=>array('admin')),
+	array('label'=>'Manipular Filial', 'url'=>array('admin')),
 );
 ?>
 

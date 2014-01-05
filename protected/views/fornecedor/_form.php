@@ -15,7 +15,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Campos <span class="required">*</span> obrigat$otilde;s.</p>
+	<p class="note">Campos <span class="required">*</span> Obrigat&oacute;rios.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 

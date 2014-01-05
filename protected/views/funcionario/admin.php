@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Listar Funcionário', 'url'=>array('index')),
+	array('label'=>'Listar Funcionários', 'url'=>array('index')),
 	array('label'=>'Cadastrar Funcionário', 'url'=>array('create')),
 );
 
