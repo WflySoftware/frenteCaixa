@@ -18,7 +18,17 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'filial_cod_filial'); ?>
-		<?php echo $form->textField($model,'filial_cod_filial',array('size'=>10,'maxlength'=>10)); ?>
+		<?php 
+			$arrayFiliais = $this->consultarFiliais();
+			for($i=0,$aux = 1;$i<count($arrayFiliais);$i++) {
+				$auxArrayFiliais[$aux] = $arrayFiliais[$i]['nome'];
+				$aux++;
+			}
+			
+			echo $form->dropDownList($model, 'filial_cod_filial',$auxArrayFiliais
+   				); 
+			
+		?>
 	</div>
 
 	<div class="row">
@@ -52,7 +62,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Pesquisar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
