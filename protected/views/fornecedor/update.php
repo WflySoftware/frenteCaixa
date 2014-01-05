@@ -3,19 +3,19 @@
 /* @var $model Fornecedor */
 
 $this->breadcrumbs=array(
-	'Fornecedors'=>array('index'),
+	'Fornecedores'=>array('index'),
 	$model->cod_fornecedor=>array('view','id'=>$model->cod_fornecedor),
-	'Update',
+	'Editar',
 );
 
 $this->menu=array(
-	array('label'=>'List Fornecedor', 'url'=>array('index')),
-	array('label'=>'Create Fornecedor', 'url'=>array('create')),
-	array('label'=>'View Fornecedor', 'url'=>array('view', 'id'=>$model->cod_fornecedor)),
-	array('label'=>'Manage Fornecedor', 'url'=>array('admin')),
+	array('label'=>'Listar Fornecedores', 'url'=>array('index')),
+	array('label'=>'Cadastrar Fornecedor', 'url'=>array('create')),
+	array('label'=>'Ver Fornecedor', 'url'=>array('view', 'id'=>$model->cod_fornecedor)),
+	array('label'=>'Manipular Fornecedor', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Fornecedor <?php echo $model->cod_fornecedor; ?></h1>
+<h1>Editar Fornecedor ID:<?php echo $model->cod_fornecedor; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
