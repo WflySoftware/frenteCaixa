@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Fornecedors',
+	'Fornecedores',
 );
 
 $this->menu=array(
-	array('label'=>'Create Fornecedor', 'url'=>array('create')),
-	array('label'=>'Manage Fornecedor', 'url'=>array('admin')),
+	array('label'=>'Cadastrar Fornecedor', 'url'=>array('create')),
+	array('label'=>'Manipular Fornecedor', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Fornecedors</h1>
+<h1>Fornecedores</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
