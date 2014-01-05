@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Cadastrar Servico</h1>
+<h1>Cadastrar Servi&ccedil;o</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
