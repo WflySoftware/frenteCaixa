@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>'Listar Funcionários', 'url'=>array('index')),
 	array('label'=>'Cadastrar Funcionário', 'url'=>array('create')),
-	array('label'=>'Atualizar Funcionário', 'url'=>array('update', 'id'=>$model->cod_funcionario)),
+	array('label'=>'Editar Funcionário', 'url'=>array('update', 'id'=>$model->cod_funcionario)),
 	array('label'=>'Deletar Funcionário', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_funcionario),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manipular Funcionários', 'url'=>array('admin')),
 );
