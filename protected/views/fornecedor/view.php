@@ -3,20 +3,20 @@
 /* @var $model Fornecedor */
 
 $this->breadcrumbs=array(
-	'Fornecedors'=>array('index'),
+	'Fornecedores'=>array('index'),
 	$model->cod_fornecedor,
 );
 
 $this->menu=array(
-	array('label'=>'List Fornecedor', 'url'=>array('index')),
-	array('label'=>'Create Fornecedor', 'url'=>array('create')),
-	array('label'=>'Update Fornecedor', 'url'=>array('update', 'id'=>$model->cod_fornecedor)),
-	array('label'=>'Delete Fornecedor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_fornecedor),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Fornecedor', 'url'=>array('admin')),
+	array('label'=>'Listar Fornecedores', 'url'=>array('index')),
+	array('label'=>'Cadastrar Fornecedor', 'url'=>array('create')),
+	array('label'=>'Editar Fornecedor', 'url'=>array('update', 'id'=>$model->cod_fornecedor)),
+	array('label'=>'Deletar Fornecedor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_fornecedor),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manipular Fornecedor', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Fornecedor #<?php echo $model->cod_fornecedor; ?></h1>
+<h1>Visualizar Fornecedor ID:<?php echo $model->cod_fornecedor; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
