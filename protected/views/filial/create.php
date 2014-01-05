@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Filials'=>array('index'),
-	'Create',
+	'Cadastrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Filial', 'url'=>array('index')),
-	array('label'=>'Manage Filial', 'url'=>array('admin')),
+	array('label'=>'Listar Filiais', 'url'=>array('index')),
+	array('label'=>'Manipular Filial', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Filial</h1>
+<h1>Cadastrar Filial</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

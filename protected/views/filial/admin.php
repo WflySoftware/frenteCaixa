@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Listar Filial', 'url'=>array('index')),
+	array('label'=>'Listar Filiais', 'url'=>array('index')),
 	array('label'=>'Cadastrar Filial', 'url'=>array('create')),
 );
 
