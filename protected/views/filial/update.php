@@ -3,19 +3,19 @@
 /* @var $model Filial */
 
 $this->breadcrumbs=array(
-	'Filials'=>array('index'),
+	'Filiais'=>array('index'),
 	$model->cod_filial=>array('view','id'=>$model->cod_filial),
-	'Update',
+	'Editar',
 );
 
 $this->menu=array(
-	array('label'=>'List Filial', 'url'=>array('index')),
-	array('label'=>'Create Filial', 'url'=>array('create')),
-	array('label'=>'View Filial', 'url'=>array('view', 'id'=>$model->cod_filial)),
-	array('label'=>'Manage Filial', 'url'=>array('admin')),
+	array('label'=>'Listar Filiais', 'url'=>array('index')),
+	array('label'=>'Cadastrar Filial', 'url'=>array('create')),
+	array('label'=>'Ver Filial', 'url'=>array('view', 'id'=>$model->cod_filial)),
+	array('label'=>'Manipularfa Filial', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Filial <?php echo $model->cod_filial; ?></h1>
+<h1>Editar Filial ID:<?php echo $model->cod_filial; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
