@@ -3,16 +3,16 @@
 /* @var $model Fornecedor */
 
 $this->breadcrumbs=array(
-	'Fornecedors'=>array('index'),
+	'Fornecedores'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Fornecedor', 'url'=>array('index')),
-	array('label'=>'Manage Fornecedor', 'url'=>array('admin')),
+	array('label'=>'Listar Fornecedores', 'url'=>array('index')),
+	array('label'=>'Manipular Fornecedor', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Fornecedor</h1>
+<h1>Criar Fornecedor</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
