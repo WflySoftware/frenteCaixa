@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Listar Vendas', 'url'=>array('index')),
-	array('label'=>'Criar Venda', 'url'=>array('create')),
+	array('label'=>'Cadastrar Venda', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

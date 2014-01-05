@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Vendas'=>array('index'),
-	'Criar',
+	'Cadastro',
 );
 
 $this->menu=array(
@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Venda</h1>
+<h1>Cadastrar Venda</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
