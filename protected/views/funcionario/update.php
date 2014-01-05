@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Funcionários'=>array('index'),
 	$model->cod_funcionario=>array('view','id'=>$model->cod_funcionario),
-	'Atualizar',
+	'Editar',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Atualizar Funcionario ID:<?php echo $model->cod_funcionario; ?></h1>
+<h1>Editar Funcionario ID:<?php echo $model->cod_funcionario; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

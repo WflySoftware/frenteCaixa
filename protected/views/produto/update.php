@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Produtos'=>array('index'),
 	$model->cod_produto=>array('view','id'=>$model->cod_produto),
-	'Atualizar',
+	'Editar',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Atualizar Produto ID:<?php echo $model->cod_produto; ?></h1>
+<h1>Editar Produto ID:<?php echo $model->cod_produto; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
