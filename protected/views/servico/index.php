@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Cadastrar Servico', 'url'=>array('create')),
-	array('label'=>'Manipular Servico', 'url'=>array('admin')),
+	array('label'=>'Cadastrar Serviço', 'url'=>array('create')),
+	array('label'=>'Manipular Serviço', 'url'=>array('admin')),
 );
 ?>
 
