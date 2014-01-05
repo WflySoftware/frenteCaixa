@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Serviços'=>array('index'),
 	$model->cod_servico=>array('view','id'=>$model->cod_servico),
-	'Atualizar',
+	'Editar',
 );
 
 $this->menu=array(

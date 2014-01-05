@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>'Listar Venda', 'url'=>array('index')),
 	array('label'=>'Criar Venda', 'url'=>array('create')),
-	array('label'=>'Atualizar Venda', 'url'=>array('update', 'id'=>$model->cod_venda)),
+	array('label'=>'Editar Venda', 'url'=>array('update', 'id'=>$model->cod_venda)),
 	array('label'=>'Deletar Venda', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_venda),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manipular Venda', 'url'=>array('admin')),
 );

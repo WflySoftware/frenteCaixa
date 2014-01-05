@@ -9,8 +9,8 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Listar Serviço', 'url'=>array('index')),
-	array('label'=>'Criar Serviço', 'url'=>array('create')),
-	array('label'=>'Atualizar Serviço', 'url'=>array('update', 'id'=>$model->cod_servico)),
+	array('label'=>'Cadastrar Serviço', 'url'=>array('create')),
+	array('label'=>'Editar Serviço', 'url'=>array('update', 'id'=>$model->cod_servico)),
 	array('label'=>'Deletar Serviço', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_servico),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manipular Serviço', 'url'=>array('admin')),
 );
