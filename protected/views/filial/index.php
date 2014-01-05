@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Filials',
+	'Filiais',
 );
 
 $this->menu=array(
-	array('label'=>'Create Filial', 'url'=>array('create')),
-	array('label'=>'Manage Filial', 'url'=>array('admin')),
+	array('label'=>'Cadastrar Filial', 'url'=>array('create')),
+	array('label'=>'Manipular Filial', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Filials</h1>
+<h1>Filiais</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
