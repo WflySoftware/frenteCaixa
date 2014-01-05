@@ -22,7 +22,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('data_2')); ?>:</b>
-	<?php echo CHtml::encode($data->data_2); ?>
+	<?php echo  Yii::app()->dateFormatter->format('dd/MM/yy',$data->data_2); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('valor_total')); ?>:</b>
