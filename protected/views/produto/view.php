@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Listar Produto', 'url'=>array('index')),
+	array('label'=>'Listar Produtos', 'url'=>array('index')),
 	array('label'=>'Cadastrar Produto', 'url'=>array('create')),
 	array('label'=>'Editar Produto', 'url'=>array('update', 'id'=>$model->cod_produto)),
 	array('label'=>'Deletar Produto', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cod_produto),'confirm'=>'Are you sure you want to delete this item?')),
