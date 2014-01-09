@@ -45,6 +45,12 @@ class Filial extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'clientes'=>array(self::HAS_MANY, 'Clientes', 'filial_cod_filial'),
+			'fornecedores'=>array(self::HAS_MANY, 'Fornecedor', 'filial_cod_filial'),
+			'funcionarios'=>array(self::HAS_MANY, 'Funcionario', 'filial_cod_filial'),
+			'produtos'=>array(self::HAS_MANY, 'Produto', 'filial_cod_filial'),
+			'servicos'=>array(self::HAS_MANY, 'Servico', 'filial_cod_filial'),
+			'vendas'=>array(self::HAS_MANY, 'Venda', 'filial_cod_filial'),
 		);
 	}
 

@@ -72,6 +72,7 @@ class Funcionario extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'filial'=>array(self::HAS_ONE, 'Filial', 'filial_cod_filial')
 		);
 	}
 
