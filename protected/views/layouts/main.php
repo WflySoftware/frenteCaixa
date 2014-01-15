@@ -253,7 +253,7 @@
 			
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li><a href="index.html"><i class="icon-asterisk"></i><span class="hidden-tablet"> Painel Inicial</span></a></li>	
+						<li><a href="#"><i class="icon-asterisk"></i><span class="hidden-tablet"> Painel Inicial</span></a></li>	
 						<li><a href="#"><i class=" icon-money"></i><span class="hidden-tablet"> Realizar Venda</span></a></li>
 						<li><a href="#"><i class="icon-search"></i><span class="hidden-tablet"> Pesquisar</span></a></li>
 						<li>
@@ -279,13 +279,6 @@
 			</div>
 			<!-- end: Main Menu -->
 <div id="content" class="span10">
-
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div>
-
-	<!-- fim header -->
-
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
@@ -296,7 +289,8 @@
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
-	</div><!-- mainmenu -->
+	</div>
+	<!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
