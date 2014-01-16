@@ -8,6 +8,8 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Frente de Caixa',
+	'name'=>'PDV - Ponto de Vendas',
+
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -51,6 +53,7 @@ return array(
 		
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=localhost;dbname=frente_caixa',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
@@ -83,4 +86,6 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
+	'sourceLanguage'=>'pt_br',
+	'language'=>'pt_br'
 );

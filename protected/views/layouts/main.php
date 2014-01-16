@@ -8,6 +8,12 @@
 	<meta name="author" content="Łukasz Holeczek">
 	<meta name="keyword" content="SimpliQ, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 	<!-- end: Meta -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="en" />
+
 
 	<!-- blueprint CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
@@ -44,7 +50,7 @@
 	<link rel="apple-touch-icon-precomposed" href="<?php echo Yii::app()->request->baseUrl; ?>/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/ico/favicon.png">
 	<!-- end: Favicon and Touch Icons -->	
-		
+
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
@@ -291,6 +297,35 @@
 		)); ?>
 	</div>
 	<!-- mainmenu -->
+
+<div class="container" id="page">
+
+	<div id="header">
+		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+	</div><!-- header -->
+
+	<div id="mainMbMenu">
+	 <?php $this->widget('application.extensions.mbmenu.MbMenu',array( 
+            'items'=>array( 
+                array('label'=>'Início', 'url'=>array('/site/index')), 
+                array('label'=>'Cadastros', 'url'=>array('/site/contact'), 'visible'=>!Yii::app()->user->isGuest,
+                  'items'=>array( 
+                    array('label'=>'Cliente','url'=>array('/cliente')),
+                    array('label'=>'Filial','url'=>array('/filial')),
+                    array('label'=>'Fornecedor','url'=>array('/fornecedor')), 
+                    array('label'=>'Funcionário','url'=>array('/funcionario')),
+                    array('label'=>'Produto','url'=>array('/produto')),
+					array('label'=>'Serviços','url'=>array('/servico')),
+                    array('label'=>'Venda','url'=>array('/venda')),     
+                	), 
+                ),
+				array('label'=>'Relatórios', 'url'=>array('/site/contact'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest) 
+            ), 
+    )); ?> 
+		
+	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
@@ -304,6 +339,7 @@
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by Wfly Software.<br/>
 		All Rights Reserved.<br/>
+		Todos os direitos Reservados.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 

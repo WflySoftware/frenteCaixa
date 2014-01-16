@@ -3,6 +3,7 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
+<<<<<<< HEAD
 	<div class="row-fluid">
 				
 				<div class="span3 smallstat box mobileHalf" onTablet="span6" onDesktop="span3">
@@ -38,6 +39,12 @@ $this->pageTitle=Yii::app()->name;
 <h1>Seja Bem Vindo ao <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
 
+=======
+
+<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+
+<p>Congratulations! You have successfully created your Yii application.</p>
+>>>>>>> 4844e44359f8fcc5944b5571b40ef57571e0975e
 
 <p>You may change the content of this page by modifying the following two files:</p>
 <ul>
